@@ -3,7 +3,7 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
-import { IntervalDisplayPage, IntervalSettingsPage } from '../pages/pages';
+import { IntervalDisplayPage, IntervalSettingsPage, SettingsPage } from '../pages/pages';
 import { Storage } from './core/Storage';
 import { HomeEmission, HomeAction } from '../pages/home/home';
 
@@ -62,6 +62,17 @@ export class AppComponent implements AfterViewInit {
   onHomeAction(emission: HomeEmission) {
     switch (emission.action) {
       case HomeAction.IntervalTimer:
+        this.menuCtrl.toggle('left');
+        break;
+
+      case HomeAction.Countdown:
+        break;
+
+      case HomeAction.Stopwatch:
+        break;
+
+      case HomeAction.Settings:
+        this.navCtrl.push(SettingsPage);
         this.menuCtrl.toggle('left');
         break;
     }
