@@ -30,9 +30,12 @@
         "ajv": "^5.2.3",
         "angular2-uuid": "^1.1.1",
         "cordova-android": "^6.3.0",
+        "cordova-plugin-compat": "^1.0.0",
         "cordova-plugin-console": "^1.1.0",
         "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-file": "^4.0.0",
         "cordova-plugin-insomnia": "^4.3.0",
+        "cordova-plugin-media": "^3.0.1",
         "cordova-plugin-nativestorage": "^2.2.2",
         "cordova-plugin-screen-orientation": "^2.0.1",
         "cordova-plugin-splashscreen": "^4.0.3",
@@ -64,7 +67,8 @@
             "ionic-plugin-keyboard": {},
             "cordova-plugin-screen-orientation": {},
             "cordova-plugin-insomnia": {},
-            "cordova-plugin-nativestorage": {}
+            "cordova-plugin-nativestorage": {},
+            "cordova-plugin-media": {}
         },
         "platforms": [
             "android"
